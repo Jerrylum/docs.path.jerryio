@@ -66,9 +66,14 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial"
+          label: "Docs"
         },
         { to: "/blog", label: "Blog", position: "left" },
+        {
+          href: "https://path.jerryio.com",
+          label: "Editor",
+          position: "right"
+        },
         {
           href: "https://github.com/Jerrylum/path.jerryio",
           label: "GitHub",

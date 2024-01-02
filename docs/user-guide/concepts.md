@@ -50,7 +50,11 @@ A **Speed Keyframe** is a point in the speed graph defined by its x and y coordi
 
 **Bent rate** is 2-dimensional curvature measured in rad/mm. It is a non-negative real number. Curvature represents how bent the curve is at any given point. If the curve is a straight line, curvature is 0 and bent rate is 0. The larger the curvature, the more tightly bent the curve is.
 
-> The definition of bent rate can be changed by the format. Please check the documentation for the format you are using.
+:::info 
+
+The definition of bent rate can be changed by the format. Please check the documentation for the format you are using.
+
+:::
 
 If the robot is going straight, it should be able to go at full speed. However, if the robot is making a turn, it has to slow down to make the turn. The tighter the turn, the slower the robot has to go. Bent rate is used to limit the target speed of the robot when the robot is making a turn.
 
@@ -58,7 +62,11 @@ If the robot is going straight, it should be able to go at full speed. However, 
 
 **Bent Rate Applicable Range** is the window for which bent rate is used to limit the target speed. The starting and ending values are displayed on the right side of the speed graph.
 
-> The bent rate applicable range is configurable in the Path Config Accordion by default. However, it can be calculated automatically by the format. In that case, the slider for the bent rate applicable range is hidden. Please check the documentation for the format you are using.
+:::info
+
+The bent rate applicable range is configurable in the Path Config Accordion by default. However, it can be calculated automatically by the format. In that case, the slider for the bent rate applicable range is hidden. Please check the documentation for the format you are using.
+
+:::
 
 ![speed-calculation-concept](img/speed-calculation-concept.png)
 

@@ -2,7 +2,6 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
@@ -32,9 +31,7 @@ export default function Home(): JSX.Element {
       title={`Home Page`}
       description="The best path editor in the VEX Robotics Competition for designing skills routes and generating path files.">
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <main></main>
     </Layout>
   );
 }

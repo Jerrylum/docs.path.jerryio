@@ -11,7 +11,7 @@ PATH.JERRYIO is using bézier spline to form a path. It consists of multiple seg
 
 In PATH.JERRYIO, each bézier curve is either a cubic bézier curve or a simple bézier curve. A bézier curve is defined by its control points. A cubic bézier curve has 4 control points, which makes it a "curve". A simple bézier curve has only 2 control points, which makes it a "straight line".
 
-All the control points(purple circle) can be called "Control", but the shared endpoints(big purple circle) of the segments are called "End Control" in order to distinguish them. Only end control points have heading attributes to indicate the target heading of the robot when the robot is at that point.
+All the control points (purple circle) can be called "Control", but the shared endpoints (big purple circle) of the segments are called "End Control" in order to distinguish them. Only end control points have heading attributes to indicate the target heading of the robot when the robot is at that point.
 
 ![Bézier Spline and Path](img/bezier-spline-and-paths-concept.png)
 

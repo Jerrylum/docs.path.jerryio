@@ -38,11 +38,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/Jerrylum/docs.path.jerryio/tree/main/"
         },
-        blog: {
-          showReadingTime: true,
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/Jerrylum/docs.path.jerryio/tree/main/"
-        },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css"
         }
@@ -69,7 +65,6 @@ const config: Config = {
           position: "left",
           label: "Docs"
         },
-        { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://path.jerryio.com",
           label: "Editor",

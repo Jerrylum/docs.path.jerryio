@@ -26,7 +26,7 @@ LemLib already has a good guide for this [here](https://lemlib.github.io/LemLib/
 
 ## Making a Path
 
-To get started, you need to [create a path](Getting-Started#create-the-first-path). Make sure to adjust the [speed](Concepts#bent-rate-and-speed-calculation) to your liking as well.
+To get started, you need to [create a path](/docs/getting-started.mdx#create-the-first-path). Make sure to adjust the [speed](/docs/user-guides/concepts.md#bent-rate-and-speed-calculation) to your liking as well.
 
 ## Downloading
 

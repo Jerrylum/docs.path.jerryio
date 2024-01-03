@@ -94,11 +94,11 @@ const config: Config = {
             },
             {
               label: "Concepts",
-              to: "/docs/user-guide/concepts"
+              to: "/docs/user-guides/concepts"
             },
             {
               label: "User Interface",
-              to: "/docs/user-guide/user-interface"
+              to: "/docs/user-guides/user-interface"
             }
           ]
         },

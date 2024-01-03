@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: This page explains the most important concepts in the editor.
 ---
 
 # Concepts

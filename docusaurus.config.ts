@@ -35,13 +35,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/Jerrylum/docs.path.jerryio/tree/main/"
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/Jerrylum/docs.path.jerryio/tree/main/"
         },
@@ -53,8 +51,11 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    // Project's social card
     image: "img/readme-banner-0.5x.png",
+    colorMode: {
+      defaultMode: "dark"
+    },
     navbar: {
       title: "PATH.JERRYIO",
       logo: {

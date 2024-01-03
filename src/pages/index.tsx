@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Home Page`}
-      description="The best path editor in the VEX Robotics Competition for designing skills routes and generating path files.">
+      description="All the tutorials and documentation you need to master PATH.JERRYIO.">
       <HomepageHeader />
       <main></main>
     </Layout>

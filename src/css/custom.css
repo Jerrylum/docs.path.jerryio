@@ -35,5 +35,5 @@ html[data-theme='dark'] {
 }
 
 .navbar__title, .hero__title {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 }

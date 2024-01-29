@@ -1,31 +1,15 @@
 ---
 sidebar_position: 3
-description: All the shortcuts to master PATH.JERRYIO. 
+description: All the shortcuts to master PATH.JERRYIO.
 ---
 
 # Keybindings
 
-## Paths
+## Robot Visualize
 
-| Shortcut                 | Description                                |
-| ------------------------ | ------------------------------------------ |
-| Left-click on the field  | Create a new cubic segment                 |
-| Right-click on the field | Create a new linear segment                |
-| Right-click on a control | Delete the control point                   |
-| Left-click on a segment  | Toggle cubic or linear segment             |
-| Right-click on a segment | Insert a control point / Split the segment |
-| Shift + Left-click       | Select multiple control points             |
-| Drag                     | Move selected control point(s)             |
-| R                        | Toggle robot visible                       |
-
-## Speed Graph
-
-| Shortcut                   | Description          |
-| -------------------------- | -------------------- |
-| Left-click on speed canvas | Create keyframe      |
-| Right-click on a keyframe  | Delete keyframe      |
-| Left-click on a keyframe   | Toggle keyframe mode |
-| Drag a keyframe            | Move keyframe        |
+| Shortcut | Description          |
+| -------- | -------------------- |
+| R        | Toggle robot visible |
 
 ## File
 

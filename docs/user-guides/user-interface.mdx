@@ -105,10 +105,10 @@ For Path 1, the first segment has two end controls and two controls. The second 
 
 When you hover to an item in the path tree, the following options will be displayed:
 
-- **Edit Path Name (Pencil)** - Edits the name of the path.
-- **Delete Path (Trash Can)** - Deletes the path.
-- **Lock Path (Lock)** - Locks the path. When a path is locked, all its end controls and controls are locked. Locked controls cannot be selected. This is useful when you want to prevent accidental changes to the path.
-- **Show Path (Eye)** - Shows or hides the path in the editor. When a path is hidden, it is not visible in the editor, but it is still visible in the path tree. This is useful when you want to hide a path temporarily.
+- **Edit Path Name (Pencil)** - Edits the name of the path. This is only available when the item is a path.
+- **Delete Path (Trash Can)** - Deletes the path/end control. This is only available when the item is a path or an end control.
+- **Lock Path (Lock)** - Locks the item. When a path is locked, all its end controls and controls are locked. Locked controls cannot be selected. This is useful when you want to prevent accidental changes to the path.
+- **Show Path (Eye)** - Shows or hides the item in the editor. When a path is hidden, it is not visible in the editor, but it is still visible in the path tree. This is useful when you want to hide a path temporarily.
 
 ![Hovering controls in a path tree](img/user-interface-path-tree-hovering-controls.png)
 
@@ -204,3 +204,57 @@ For security reasons, PATH.JERRYIO will not automatically download the field ima
 ![Request Download Missing Field Image](img/user-interface-request-download-missing-field-image.png)
 
 If the path file uses a custom field image and the field image is missing from the local storage, you need to upload and install the image file or click "No" to use the default field image. Although the path file doesn't contain the field image, it contains the field image's signature to verify its integrity. You need to upload the field image with the same signature to install the field image.
+
+## Field Canvas
+
+The Field Canvas is the main canvas for drawing the paths. It is the canvas in the middle section of the editor.
+
+### Controls
+
+| Shortcut                 | Description                 |
+| ------------------------ | --------------------------- |
+| Left-click on the field  | Create a new cubic segment  |
+| Right-click on the field | Create a new linear segment |
+| Right-click on a control | Delete the control point    |
+
+### Segments
+
+| Shortcut                 | Description                                |
+| ------------------------ | ------------------------------------------ |
+| Left-click on a segment  | Toggle cubic or linear segment             |
+| Right-click on a segment | Insert a control point / Split the segment |
+| Shift + Left-click       | Select multiple control points             |
+
+### Panning & Zooming
+
+The Field Canvas can be panned and zoomed using the mouse wheel or trackpad. You can zoom the Field Canvas by holding the Ctrl key and scrolling the mouse wheel or trackpad. Press Ctrl + + to zoom in and Ctrl + - to zoom out.
+
+If you are using a touch screen, you can pinch to zoom the Field Canvas. To pan the Field Canvas, you can press on the Field Canvas and drag your finger.
+
+### Field Image
+
+The field image is displayed in the background of the Field Canvas. It can be changed in the General Config Accordion. See more details in the [General Config Accordion](#general-config-accordion) section. To customize the field image, you can use the [Asset Manager](#asset-manager).
+
+### Controls Selection
+
+Controls can be selected by clicking on them. Multiple controls can be selected by holding the shift key and clicking on them. Unselect a control by clicking on it again. Selected controls are displayed as bright purple circles. The selected controls can be dragged to change their position.
+
+If you want to select all the controls in a segment, you can press Ctrl + A to select all the controls in the path. Press Ctrl + A again to select all the controls in the path file.
+
+### Area Selection
+
+You can select multiple controls by dragging a selection area. To drag a selection area, you can left-click on the field and drag the mouse. All the controls inside the selection area will be selected. You can press shift to add/remove controls from the selection area.
+
+If you are using a touch screen, you can select multiple controls by pressing on the field and stay on the screen for a while. You can then see the animation indicating that you are dragging a selection area. After that, you can start dragging the selection area.
+
+### Control Carrying
+
+Control carrying is a feature that allows you to carry the nearby small control points when dragging end control point(s). It is useful when you want to move the end control(s) without changing the shape of the segment(s). You can press shift to disable control carrying when dragging end control(s)
+
+If you are using a touch screen, this feature is enabled by default.
+
+### Magnetic Snapping
+
+Magnetic snapping is a feature that allows you to snap the control points to the field image. When dragging the control point(s), you can press Shift to enable magnetic snapping. It is useful when you want to drag control(s) snapped to other control(s), heading direction, or previous position.
+
+If you are using a touch screen, after you select the controls and drag them to the position you want to snap to, you can stay on the screen for a while and the controls will snap to the position automatically. To disable magnetic snapping, you can move the controls away from that position.

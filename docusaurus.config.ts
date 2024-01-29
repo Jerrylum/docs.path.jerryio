@@ -100,7 +100,7 @@ const config: Config = {
           ]
         },
         {
-          title: "Discord Community",
+          title: "Discord Communities",
           items: [
             {
               label: "PATH.JERRYIO",

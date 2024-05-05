@@ -16,10 +16,10 @@ PATH.JERRYIO has a user interface and layout similar to many other path editors 
 PATH.JERRYIO comes with a simple and intuitive user interface. The user interface is divided into three sections and each section contains one or more panels. A panel is a container for displaying editor and configuration information. Sometimes, a panel can be expanded or collapsed by clicking on the panel header:
 
 - **Field Canvas** - The main canvas for drawing the paths.
-- **General Config Accordion** - The panel for general configurations, for example, which format to use, unit of length, point density, etc.
-- **Config Accordion** - The panel for control configurations, for example, x and y coordinates, heading, etc.
-- **Path Config Accordion** - The panel for path configurations, for example, minimum and maximum speed, etc.
-- **Menu Accordion** - The panel for menu items.
+- **General Config Panel** - The panel for general configurations, for example, which format to use, unit of length, point density, etc.
+- **Config Config Panel** - The panel for control configurations, for example, x and y coordinates, heading, etc.
+- **Path Config Panel** - The panel for path configurations, for example, minimum and maximum speed, etc.
+- **Menu Panel** - The panel for menu items.
 - **Path Tree** - A hierarchical representation of the paths and controls in the editor. The path tree can be used to select and edit paths and controls.
 - **Speed Graph** - A graphical representation of the speed profile of the selected path. The speed graph can be used to edit the speed profile by adding speed keyframes on the graph.
 
@@ -35,11 +35,11 @@ In the exclusive layout, all panels are hidden by default and can be opened by c
 
 Although the mobile layout is designed for mobile devices, all the layouts support touch screens and trackpads.
 
-## General Config Accordion
+## General Config Panel
 
-The General Config Accordion contains all the general configurations for the editor, including all the default settings and additional settings from the format you are using:
+The General Config Panel contains all the general configurations for the editor, including all the default settings and additional settings from the format you are using:
 
-![General Config Accordion](img/user-interface-general-config-accordion.png)
+![General Config Panel](img/user-interface-general-config-accordion.png)
 
 - **Format** - The format of the path file. The format can be changed at any time, and the editor can automatically convert the path file to the new format.
 - **Unit of Length** - The unit of length used in the editor. All the input fields and information related to coordinates and distances are presented in this unit. The default unit of length is based on the format you are using. For example, the path.jerryio format uses centimeters by default, and the LemLib format uses inches. The unit of length can be changed at any time, and the editor can update all the input fields to adapt to the new unit of length. However, it doesn't affect how the output path file is generated.
@@ -49,27 +49,21 @@ The General Config Accordion contains all the general configurations for the edi
 - **Holonomic Drive** - Whether the robot is holonomic. If the robot is holonomic, it can move in any direction without changing its orientation. If the robot is not holonomic, it can only move in the direction it is facing. This is used for robot visualization in the editor only. When this is set to true, the heading of the robot will be referenced to the heading attribute of the end controls in the current segment. <ReactPlayer loop controls url="/img/user-interface-holonomic-drive-differents.mp4" style={{margin: "20px 0", maxWidth: "100%"}} />
 - **Field Layer** - The field image used in the editor. It can be customized by uploading a new image. See more details in the [Asset Manager](#asset-manager) section.
 
-## Control Accordion
+## Control Config Panel
 
-The Control Accordion allows you to inspect and enter the x and y coordinates of the control points. It is only available when exactly one control point is selected. When multiple control points are selected, the input fields are disabled.
+The Control Config Panel allows you to inspect and enter the x and y coordinates of the control points. It is only available when exactly one control point is selected. When multiple control points are selected, the input fields are disabled.
 
-![Control Accordion](img/user-interface-control-accordion.png)
+![Control Config Panel](img/user-interface-control-accordion.png)
 
 In addition, when an end control point is selected, the heading of the end control point can be edited. The heading is the direction in degree.
 
-There are four action buttons in the control accordion:
-- Rotate Right 90° - Rotates the selected control points 90° clockwise. The center of rotation is the center of all the selected control points.
-- Rotate Left 90° - Rotates the selected control points 90° counterclockwise. The center of rotation is the center of all the selected control points.
-- Flip Horizontally - Flips the selected control points horizontally. The mirror line is the center of the field.
-- Flip Vertically - Flips the selected control points vertically. The mirror line is the center of the field.
-
 All input fields in the control accordion are [computable input fields](#computable-input-field). The units are based on the unit of length setting.
 
-## Path Config Accordion
+## Path Config Panel
 
-The Path Config Accordion contains all the path configurations, including the minimum and maximum speed, the bent rate applicable range, and additional settings from the format you are using. To learn more about the speed and bent rate, please check out the [Concepts > Bent Rate and Speed Calculation](./Concepts#bent-rate-and-speed-calculation) section.
+The Path Config Panel contains all the path configurations, including the minimum and maximum speed, the bent rate applicable range, and additional settings from the format you are using. To learn more about the speed and bent rate, please check out the [Concepts > Bent Rate and Speed Calculation](./Concepts#bent-rate-and-speed-calculation) section.
 
-![Path Config Accordion](img/user-interface-path-config-accordion.png)
+![Path Config Panel](img/user-interface-path-config-accordion.png)
 
 ## Menu
 
@@ -95,11 +89,11 @@ The menu provides access to all the features of the editor. It is divided into f
 
 **Download As** downloads the path file to your computer and prompts you to choose the name of the file every time. **Download** downloads the path file and only prompts you to choose the name of the file the first time. **Download** is different from **Save** as it creates a new file every time.
 
-## Path Tree Accordion
+## Path Tree Panel
 
-The Path Tree Accordion is a hierarchical representation of the paths and controls in the editor. The path tree can be used to select and edit paths and controls. A path file can contain multiple paths and all paths in the file are listed in the path tree.
+The Path Tree Panel is a hierarchical representation of the paths and controls in the editor. The path tree can be used to select and edit paths and controls. A path file can contain multiple paths and all paths in the file are listed in the path tree.
 
-![Path Tree Accordion](img/user-interface-path-tree.png)
+![Path Tree Panel](img/user-interface-path-tree.png)
 
 - **Add New Path** - Adds a new path to the path file.
 - **Collapse All / Expand All** - Collapses or expands all the paths in the path tree.
@@ -188,7 +182,7 @@ Assert Manager is a modal that allows you to manage all the assets used in the e
 
 PATH.JERRYIO has support for setting custom field backgrounds with custom sizes. This allows the software to be used with other fields from other robotics competitions, like FRC or FTC.
 
-To change the field image, click on the field layer drop-down list in the General Config Accordion and select the field you want to use. If you want to use your own field image, select the "custom" option.
+To change the field image, click on the field layer drop-down list in the General Config Panel and select the field you want to use. If you want to use your own field image, select the "custom" option.
 
 This will bring up the Asset Manager. Click on the "Create" button under the "Field Image" section to add a new field image.
 
@@ -240,7 +234,7 @@ If you are using a touch screen, you can pinch to zoom the Field Canvas. To pan 
 
 ### Field Image
 
-The field image is displayed in the background of the Field Canvas. It can be changed in the General Config Accordion. See more details in the [General Config Accordion](#general-config-accordion) section. To customize the field image, you can use the [Asset Manager](#asset-manager).
+The field image is displayed in the background of the Field Canvas. It can be changed in the General Config Panel. See more details in the [General Config Panel](#general-config-accordion) section. To customize the field image, you can use the [Asset Manager](#asset-manager).
 
 ### Controls Selection
 

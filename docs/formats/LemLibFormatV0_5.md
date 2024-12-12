@@ -16,7 +16,7 @@ If you want to learn more about Odometry, you can read the [Purdue Sigbots Wiki]
 
 Pure pursuit is a path following algorithm that works by drawing an imaginary circle around the robot, and then having the robot move toward the point where the path and the circle intersect. You can find more information about this algorithm [here](https://lemlib.github.io/LemLib/md_docs_tutorials_4_pure_pursuit.html#autotoc_md26).
 
-## How PATH.JERRYIO works with LemLib
+## How PATH.JERRYIO Works with LemLib
 
 LemLib includes some pre-written classes and functions to let you define your robot programmatically. Specifically, you can create a `lemlib::OdomSensors` instance to let you define the sensors you're using for odometry. After you define your drivetrain and chassis with the correct parameters that match your robot configuration in the physical world, LemLib will be able to use the odometry sensors to track the robot's position. This is crucial for the Pure Pursuit algorithm to work because it uses the robot's position to determine where to drive.
 
@@ -26,7 +26,7 @@ After we create a path, we can download a "path file", which is a file that defi
 
 Note that PATH.JERRYIO is responsible for creating the path file, while LemLib is responsible for reading the path file and using the data to control the robot.
 
-Keep in mind that PATH.JERRYIO is a flexible multi-purpose path editor/planner. It is not just a path file generator for LemLib, so it can do more stuff than what LemLib can do. For example, you can set the target heading of every end control point on PATH.JERRYIO, but they are not used to generate the LemLib path file. This is because LemLib v0.5 is designed for tank drive robots. Since a tank drive does not have holonomic capabilities, there is no need to have target headings. As a result, heading values are not included in the path file. The heading values might be useful for visualizing the path and generating a path file for other libraries, but not for LemLib.
+Keep in mind that PATH.JERRYIO is a flexible multi-purpose path editor/planner. It is not just a path file generator for LemLib, so it can do more stuff than what LemLib can do. For example, you can set the target heading of every end control point on PATH.JERRYIO, but they are not used to generate the LemLib path file. This is because LemLib v0.5 is designed for tank drive robots and a tank drive does not have holonomic capabilities. As a result, heading values are not included in the path file as they are not needed. The heading values might be useful for visualizing the path and generating a path file for other libraries, but not for LemLib.
 
 ## Prerequisites
 

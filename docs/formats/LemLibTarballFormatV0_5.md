@@ -69,6 +69,33 @@ void autonomous() {
 }
 ```
 
+## Make sure your initial pose is set correctly
+
+For example, if you want to begin your autonomous program at the coordinates X = -48 inches and Y = 12 inches with a heading of 90 degrees:
+
+![initial pose](./LemLibTarballFormatV0_5-img/robot-positioning-robot-on-field.png)
+
+The position of the first end control point of the path should be at the the same coordinates as the initial pose of the robot in the physical world:
+
+![initial pose](./LemLibTarballFormatV0_5-img/robot-positioning-path-in-editor.png)
+
+In addition, `chassis.setPose` should be called to set the initial pose at the beginning of the autonomous program:
+
+```cpp
+void autonomous() {
+  // Set initial robot pose (x, y, heading)
+  chassis.setPose(-48, 12, 90);
+  
+  // Start autonomous program
+
+  // Follow a path
+  chassis.follow(decoder["Path"], 15, 2000, true, false); // blocking
+
+  // Control subsystems
+  intake.move(127);
+}
+```
+
 ## Tips and Best Practices
 
 1. **Naming Paths**: Use clear, descriptive names for your paths in PATH.JERRYIO as these names will be used in your code. Only ASCII characters (basically the characters you see on your keyboard) are supported.

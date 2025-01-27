@@ -4,7 +4,7 @@
 
 LemLib Tarball is an extension format for LemLib that enables handling multiple paths in a single file. This solves the limitation of LemLib's original path file format which only supports one path per file.
 
-If you are not familiar with the original LemLib format, you can read the [LemLib v0.5 Documentation](./LemLibFormatV0_5) to learn more.
+If you are not familiar with the original LemLib format, you can read the [LemLib v0.5 Documentation](LemLibFormatV0_5) to learn more.
 
 ## Prerequisites
 

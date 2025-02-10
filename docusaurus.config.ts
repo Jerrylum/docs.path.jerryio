@@ -3,8 +3,8 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "PATH.JERRYIO",
-  tagline: "The best path editor in VRC for designing skills routes and generating path files",
+  title: "PATH.JERRYIO Documentation",
+  tagline: "All the tutorials and documentation you need to master PATH.JERRYIO",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -59,7 +59,7 @@ const config: Config = {
       defaultMode: "dark"
     },
     navbar: {
-      title: "PATH.JERRYIO",
+      title: "PATH.JERRYIO Documentation",
       logo: {
         alt: "PATH.JERRYIO Logo",
         src: "img/logo512.svg"

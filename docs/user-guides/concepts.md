@@ -92,4 +92,8 @@ A keyframe with the "Bent Rate Interruption" flag set to true affects the speed 
 
 The formula can be simplified to:
 
-![speed-calculation-formula](img/speed-calculation-formula.png)
+$$
+u(x) = \text{determined by keyframes} \\
+w(x) = \max(\kappa_{\text{start}}, \min(k_x, \kappa_{\text{end}})) \\
+v(x) = \min(u(x), s_{\text{max}} - w(x) - \kappa_{\text{start}}) \cdot \frac{s_{\text{max}} - s_{\text{min}}}{\kappa_{\text{end}} - \kappa_{\text{start}}}
+$$

@@ -14,7 +14,7 @@ If you want to learn more about Odometry, you can read the [Purdue Sigbots Wiki]
 
 ## What is Pure Pursuit
 
-Pure pursuit is a path following algorithm that works by drawing an imaginary circle around the robot, and then having the robot move toward the point where the path and the circle intersect. You can find more information about this algorithm [here](https://lemlib.github.io/LemLib/md_docs_tutorials_4_pure_pursuit.html#autotoc_md26).
+Pure pursuit is a path following algorithm that works by drawing an imaginary circle around the robot, and then having the robot move toward the point where the path and the circle intersect. You can find more information about this algorithm [here](https://lemlib.readthedocs.io/en/stable/tutorials/7_pure_pursuit.html).
 
 ## How PATH.JERRYIO Works with LemLib
 
@@ -34,17 +34,17 @@ Keep in mind that PATH.JERRYIO is a flexible multi-purpose path editor/planner. 
 
 In order to use pure pursuit, your robot must be capable of tracking its position in 2D space. LemLib supports odometry as a way of doing this, which can be used with a variety of sensors. You can use any combination of integrated motor encoders, rotation sensors, optical shaft encoders, or IMUs. While any combination can work, We recommend an odometry setup with three passive tracking wheels (using either rotation sensors or optical shaft encoders) or two passive tracking wheels and an IMU.
 
-You can find more information on the chassis setup [here](https://lemlib.github.io/LemLib/md_docs_tutorials_2_setting_up_the_chassis.html#autotoc_md14).
+You can find more information on the chassis setup [here](https://lemlib.readthedocs.io/en/stable/tutorials/2_configuration.html).
 
 ### Setting Up the Software
 
 First, you will need a PROS project, along with the LemLib template installed.
 
-You can find instructions on how to install PROS [here](https://pros.cs.purdue.edu/v5/getting-started/), and how to install LemLib [here](https://lemlib.github.io/LemLib/md_docs_tutorials_1_getting_started.html#autotoc_md10).
+You can find instructions on how to install PROS [here](https://pros.cs.purdue.edu/v5/getting-started/), and how to install LemLib [here](https://lemlib.readthedocs.io/en/stable/tutorials/1_getting_started.html).
 
 Once you do that, you'll need to configure your chassis. You'll need to configure LemLib with the sensors you're using, as well as how far apart your tracking wheels are.
 
-LemLib already has a good guide for this [here](https://lemlib.github.io/LemLib/md_docs_tutorials_2_setting_up_the_chassis.html).
+LemLib already has a good guide for this [here](https://lemlib.readthedocs.io/en/stable/tutorials/2_configuration.html).
 
 ## Making a Path
 

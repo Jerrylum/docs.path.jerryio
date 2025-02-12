@@ -37,13 +37,13 @@ pros c apply LemLibTarball
 
 1. First, include the necessary headers:
 
-```cpp
+```cpp title="src/main.cpp"
 #include "lemlib-tarball/api.hpp"
 ```
 
 2. Import your path file as an asset. Add this line after your includes:
 
-```cpp
+```cpp title="src/main.cpp"
 // Replace my_paths.txt with your actual filename
 // "." is replaced with "_" to overcome c++ limitations
 ASSET(my_paths_txt);
@@ -51,20 +51,22 @@ ASSET(my_paths_txt);
 
 3. Create a decoder instance to read your paths:
 
-```cpp
+```cpp title="src/main.cpp"
 // Create the decoder
 lemlib_tarball::Decoder decoder(my_paths_txt);
 ```
 
 4. Use the paths in your autonomous routine:
 
-```cpp
+```cpp title="src/main.cpp"
 void autonomous() {
   // Set initial robot pose (x, y, heading)
   chassis.setPose(0, 0, 0);
   // Follow paths by their names from PATH.JERRYIO
   // Parameters: path, lookahead distance, timeout
+  // highlight-next-line
   chassis.follow(decoder["Path 1"], 15, 2000);
+  // highlight-next-line
   chassis.follow(decoder["Path 2"], 15, 2000);
 }
 ```
@@ -81,9 +83,10 @@ The position of the first end control point of the path should be at the the sam
 
 In addition, `chassis.setPose` should be called to set the initial pose at the beginning of the autonomous program:
 
-```cpp
+```cpp title="src/main.cpp"
 void autonomous() {
   // Set initial robot pose (x, y, heading)
+  // highlight-next-line
   chassis.setPose(-48, 12, 90);
   
   // Start autonomous program
